@@ -26,7 +26,7 @@ export const routes = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <Details></Details>,
-                loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)
+                loader: ({params}) => fetch(`https://travel-guru-server-jade.vercel.app/details/${params.id}`)
             },
             {
                 path: '/login',

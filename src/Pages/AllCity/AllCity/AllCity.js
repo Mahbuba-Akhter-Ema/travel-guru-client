@@ -8,7 +8,7 @@ const AllCity = () => {
     const [allCity, setAllCity] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/all-cities')
+        fetch('https://travel-guru-server-jade.vercel.app/all-cities')
             .then(res => res.json())
             .then(data => setAllCity(data))
     }, [])
